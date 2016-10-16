@@ -18,7 +18,7 @@ num_non_base_packages = 0;
 
 for installed_package in list_of_installed_packages:
 
-    if installed_package not in list_of_base_packages:
+    if installed_package not in list_of_base_packages and installed_package.lower().find('deinstall') == -1:
         # clean up the line before printing it out
         output = re.sub('[\t]*(install|deinstall)', '', installed_package.strip(os.linesep));
         num_non_base_packages += 1;

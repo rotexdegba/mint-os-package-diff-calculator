@@ -12,7 +12,10 @@ $list_of_base_packages = file($file_with_list_of_base_packages);
 $num_non_base_packages = 0;
 foreach($list_of_installed_packages as $installed_package) {
     
-    if( !in_array($installed_package, $list_of_base_packages) ) {
+    if( 
+        !in_array($installed_package, $list_of_base_packages) 
+        && strpos(strtolower($installed_package), 'deinstall') === false
+    ) {
         
         //$output = trim($installed_package, PHP_EOL);
         $output = preg_replace('/[\t]*(install|deinstall)/i', '', trim($installed_package, PHP_EOL));
