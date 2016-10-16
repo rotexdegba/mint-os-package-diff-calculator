@@ -1,1 +1,1 @@
-* Look into using a simpler command like `apt list --installed` to simplify script
+* Look into using a simpler command like `apt list --installed` to simplify script. See [https://wiki.debian.org/ListInstalledPackages](https://wiki.debian.org/ListInstalledPackages) and [http://askubuntu.com/questions/17823/how-to-list-all-installed-packages](http://askubuntu.com/questions/17823/how-to-list-all-installed-packages)

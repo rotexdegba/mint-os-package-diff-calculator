@@ -4,3 +4,8 @@ nbproject/
 /nbproject/*.*
 /nbproject/*/
 
+.vscode/
+/.vscode/
+/.vscode/*
+/.vscode/*.*
+/.vscode/*/
